@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyncTooling - Project Management for Construction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-project-diagram logo-icon"></i>
+                SyncTooling
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#demo">Demo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="#demo">Try Demo</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>Streamline Your Construction Projects</h1>
+                    <p class="lead">ProjectSync Dashboard is a comprehensive project management platform designed specifically for construction workflows.</p>
+                    <div class="hero-buttons">
+                        <a href="#demo" class="btn btn-primary btn-lg me-3">Try Demo</a>
+                        <a href="#features" class="btn btn-outline-light btn-lg">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="dashboard-mockup">
+                        <svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Dashboard Frame -->
+                            <rect x="10" y="10" width="580" height="380" rx="10" ry="10" fill="#2c3e50" />
+                            <!-- Dashboard Header -->
+                            <rect x="10" y="10" width="580" height="50" rx="10" ry="10" fill="#34495e" />
+                            <text x="40" y="40" font-family="Arial" font-size="18" fill="#ffffff">ProjectSync Dashboard</text>
+                            <!-- Navigation Menu -->
+                            <rect x="10" y="60" width="150" height="330" rx="0" ry="0" fill="#34495e" />
+                            <!-- Menu Items -->
+                            <rect x="20" y="80" width="130" height="40" rx="5" ry="5" fill="#3498db" />
+                            <text x="50" y="105" font-family="Arial" font-size="14" fill="#ffffff">Dashboard</text>
+                            <rect x="20" y="130" width="130" height="40" rx="5" ry="5" fill="#2c3e50" />
+                            <text x="50" y="155" font-family="Arial" font-size="14" fill="#ffffff">Projects</text>
+                            <rect x="20" y="180" width="130" height="40" rx="5" ry="5" fill="#2c3e50" />
+                            <text x="50" y="205" font-family="Arial" font-size="14" fill="#ffffff">Resources</text>
+                            <rect x="20" y="230" width="130" height="40" rx="5" ry="5" fill="#2c3e50" />
+                            <text x="50" y="255" font-family="Arial" font-size="14" fill="#ffffff">Timeline</text>
+                            <rect x="20" y="280" width="130" height="40" rx="5" ry="5" fill="#2c3e50" />
+                            <text x="50" y="305" font-family="Arial" font-size="14" fill="#ffffff">Reports</text>
+                            <!-- Main Content Area -->
+                            <rect x="170" y="70" width="410" height="310" rx="5" ry="5" fill="#ecf0f1" />
+                            <!-- Project Timeline Chart -->
+                            <rect x="180" y="90" width="390" height="120" rx="5" ry="5" fill="#ffffff" />
+                            <text x="200" y="110" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50">Project Timeline</text>
+                            <!-- Timeline Bars -->
+                            <rect x="200" y="130" width="100" height="20" rx="3" ry="3" fill="#3498db" />
+                            <rect x="310" y="130" width="80" height="20" rx="3" ry="3" fill="#2ecc71" />
+                            <rect x="400" y="130" width="120" height="20" rx="3" ry="3" fill="#e74c3c" />
+                            <rect x="200" y="160" width="60" height="20" rx="3" ry="3" fill="#3498db" />
+                            <rect x="270" y="160" width="150" height="20" rx="3" ry="3" fill="#f1c40f" />
+                            <rect x="430" y="160" width="90" height="20" rx="3" ry="3" fill="#9b59b6" />
+                            <!-- Resource Allocation Chart -->
+                            <rect x="180" y="220" width="190" height="150" rx="5" ry="5" fill="#ffffff" />
+                            <text x="200" y="240" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50">Resource Allocation</text>
+                            <!-- Pie Chart -->
+                            <circle cx="275" cy="300" r="50" fill="#3498db" />
+                            <path d="M 275 300 L 275 250 A 50 50 0 0 1 321 325 Z" fill="#2ecc71" />
+                            <path d="M 275 300 L 321 325 A 50 50 0 0 1 229 325 Z" fill="#e74c3c" />
+                            <path d="M 275 300 L 229 325 A 50 50 0 0 1 275 250 Z" fill="#f1c40f" />
+                            <!-- Project Status Card -->
+                            <rect x="380" y="220" width="190" height="150" rx="5" ry="5" fill="#ffffff" />
+                            <text x="400" y="240" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50">Project Status</text>
+                            <!-- Status Bars -->
+                            <rect x="400" y="260" width="150" height="15" rx="3" ry="3" fill="#ecf0f1" />
+                            <rect x="400" y="260" width="90" height="15" rx="3" ry="3" fill="#3498db" />
+                            <text x="400" y="290" font-family="Arial" font-size="12" fill="#2c3e50">Foundation: 60%</text>
+                            <rect x="400" y="300" width="150" height="15" rx="3" ry="3" fill="#ecf0f1" />
+                            <rect x="400" y="300" width="120" height="15" rx="3" ry="3" fill="#2ecc71" />
+                            <text x="400" y="330" font-family="Arial" font-size="12" fill="#2c3e50">Framing: 80%</text>
+                            <rect x="400" y="340" width="150" height="15" rx="3" ry="3" fill="#ecf0f1" />
+                            <rect x="400" y="340" width="45" height="15" rx="3" ry="3" fill="#e74c3c" />
+                            <text x="400" y="370" font-family="Arial" font-size="12" fill="#2c3e50">Electrical: 30%</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Powerful Project Management Features</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Timeline Visualization</h3>
+                        <p>Real-time project timeline visualization with interactive Gantt charts and critical path analysis for better project planning.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h3>Resource Allocation</h3>
+                        <p>Comprehensive resource allocation and tracking tools to optimize workforce, equipment, and material usage across projects.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
+                        <h3>Dependency Management</h3>
+                        <p>Automated dependency management that identifies bottlenecks and suggests optimizations to keep projects on schedule.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Custom Reporting</h3>
+                        <p>Customizable reporting for stakeholders with real-time dashboards, automated updates, and exportable formats.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Interactive Demo</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="demo-description">
+                        <h3>Experience ProjectSync in Action</h3>
+                        <p>Our interactive demo showcases the key features of the ProjectSync Dashboard, including:</p>
+                        <ul class="demo-features">
+                            <li><i class="fas fa-check-circle"></i> Interactive Gantt charts for project timelines</li>
+                            <li><i class="fas fa-check-circle"></i> Resource allocation visualization tools</li>
+                            <li><i class="fas fa-check-circle"></i> Dependency mapping and critical path analysis</li>
+                            <li><i class="fas fa-check-circle"></i> Customizable reporting dashboards</li>
+                        </ul>
+                        <p>Click on different sections of the dashboard to explore functionality.</p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="demo-container">
+                        <div class="dashboard-demo">
+                            <div class="dashboard-header">
+                                <div class="dashboard-logo">
+                                    <i class="fas fa-project-diagram"></i>
+                                    <span>ProjectSync</span>
+                                </div>
+                                <div class="dashboard-controls">
+                                    <div class="user-info">
+                                        <span>Welcome, John</span>
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-content">
+                                <div class="sidebar">
+                                    <ul class="nav-menu">
+                                        <li class="active"><i class="fas fa-th-large"></i> Dashboard</li>
+                                        <li><i class="fas fa-tasks"></i> Projects</li>
+                                        <li><i class="fas fa-users"></i> Resources</li>
+                                        <li><i class="fas fa-calendar-alt"></i> Schedule</li>
+                                        <li><i class="fas fa-chart-bar"></i> Reports</li>
+                                        <li><i class="fas fa-cog"></i> Settings</li>
+                                    </ul>
+                                </div>
+                                <div class="main-content">
+                                    <div class="content-header">
+                                        <h2>Project Overview</h2>
+                                        <div class="date-filter">
+                                            <span>May 2025</span>
+                                            <i class="fas fa-calendar"></i>
+                                        </div>
+                                    </div>
+                                    <div class="stats-cards">
+                                        <div class="stat-card">
+                                            <div class="stat-icon blue">
+                                                <i class="fas fa-clipboard-list"></i>
+                                            </div>
+                                            <div class="stat-info">
+                                                <h3>12</h3>
+                                                <p>Active Projects</p>
+                                            </div>
+                                        </div>
+                                        <div class="stat-card">
+                                            <div class="stat-icon green">
+                                                <i class="fas fa-users"></i>
+                                            </div>
+                                            <div class="stat-info">
+                                                <h3>48</h3>
+                                                <p>Team Members</p>
+                                            </div>
+                                        </div>
+                                        <div class="stat-card">
+                                            <div class="stat-icon orange">
+                                                <i class="fas fa-exclamation-triangle"></i>
+                                            </div>
+                                            <div class="stat-info">
+                                                <h3>3</h3>
+                                                <p>At Risk</p>
+                                            </div>
+                                        </div>
+                                        <div class="stat-card">
+                                            <div class="stat-icon purple">
+                                                <i class="fas fa-check-circle"></i>
+                                            </div>
+                                            <div class="stat-info">
+                                                <h3>8</h3>
+                                                <p>Completed</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gantt-container">
+                                        <div class="section-header">
+                                            <h3>Project Timeline</h3>
+                                            <div class="controls">
+                                                <i class="fas fa-expand"></i>
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </div>
+                                        </div>
+                                        <div class="gantt-chart">
+                                            <div class="timeline-header">
+                                                <div class="project-name">Project Name</div>
+                                                <div class="timeline-dates">
+                                                    <span>May 1</span>
+                                                    <span>May 10</span>
+                                                    <span>May 20</span>
+                                                    <span>May 30</span>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-row">
+                                                <div class="project-name">Riverside Apartments</div>
+                                                <div class="timeline-bar">
+                                                    <div class="bar blue" style="width: 70%; margin-left: 0%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-row">
+                                                <div class="project-name">Downtown Office</div>
+                                                <div class="timeline-bar">
+                                                    <div class="bar green" style="width: 50%; margin-left: 20%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-row">
+                                                <div class="project-name">Parkview Residences</div>
+                                                <div class="timeline-bar">
+                                                    <div class="bar orange" style="width: 40%; margin-left: 10%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-row">
+                                                <div class="project-name">Medical Center</div>
+                                                <div class="timeline-bar">
+                                                    <div class="bar red" style="width: 60%; margin-left: 30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="charts-container">
+                                        <div class="chart-card">
+                                            <div class="section-header">
+                                                <h3>Resource Allocation</h3>
+                                                <div class="controls">
+                                                    <i class="fas fa-expand"></i>
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </div>
+                                            </div>
+                                            <div class="resource-chart">
+                                                <div class="chart-placeholder">
+                                                    <div class="pie-segment blue" style="transform: rotate(0deg) skew(30deg);"></div>
+                                                    <div class="pie-segment green" style="transform: rotate(120deg) skew(60deg);"></div>
+                                                    <div class="pie-segment orange" style="transform: rotate(180deg) skew(90deg);"></div>
+                                                    <div class="pie-segment red" style="transform: rotate(270deg) skew(90deg);"></div>
+                                                </div>
+                                                <div class="chart-legend">
+                                                    <div class="legend-item">
+                                                        <span class="color-box blue"></span>
+                                                        <span>Labor (40%)</span>
+                                                    </div>
+                                                    <div class="legend-item">
+                                                        <span class="color-box green"></span>
+                                                        <span>Materials (25%)</span>
+                                                    </div>
+                                                    <div class="legend-item">
+                                                        <span class="color-box orange"></span>
+                                                        <span>Equipment (20%)</span>
+                                                    </div>
+                                                    <div class="legend-item">
+                                                        <span class="color-box red"></span>
+                                                        <span>Other (15%)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chart-card">
+                                            <div class="section-header">
+                                                <h3>Project Status</h3>
+                                                <div class="controls">
+                                                    <i class="fas fa-expand"></i>
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </div>
+                                            </div>
+                                            <div class="status-chart">
+                                                <div class="progress-item">
+                                                    <div class="progress-info">
+                                                        <span>Riverside Apartments</span>
+                                                        <span>70%</span>
+                                                    </div>
+                                                    <div class="progress-bar">
+                                                        <div class="progress blue" style="width: 70%"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="progress-item">
+                                                    <div class="progress-info">
+                                                        <span>Downtown Office</span>
+                                                        <span>45%</span>
+                                                    </div>
+                                                    <div class="progress-bar">
+                                                        <div class="progress green" style="width: 45%"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="progress-item">
+                                                    <div class="progress-info">
+                                                        <span>Parkview Residences</span>
+                                                        <span>30%</span>
+                                                    </div>
+                                                    <div class="progress-bar">
+                                                        <div class="progress orange" style="width: 30%"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="progress-item">
+                                                    <div class="progress-info">
+                                                        <span>Medical Center</span>
+                                                        <span>15%</span>
+                                                    </div>
+                                                    <div class="progress-bar">
+                                                        <div class="progress red" style="width: 15%"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Users Say</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"SyncTooling has revolutionized how we manage our construction projects. The timeline visualization and dependency management features have helped us identify bottlenecks before they become problems."</p>
+                            <div class="client-info">
+                                <h5>Robert Johnson</h5>
+                                <p class="client-position">Project Manager, Highland Construction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The resource allocation tools have improved our efficiency by at least 25%. We're now able to optimize our workforce and equipment across multiple projects with minimal conflicts."</p>
+                            <div class="client-info">
+                                <h5>Sarah Thompson</h5>
+                                <p class="client-position">Operations Director, BuildRight Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The customizable reporting features have transformed our stakeholder communications. Our clients love the transparency and real-time updates that SyncTooling provides."</p>
+                            <div class="client-info">
+                                <h5>Michael Chen</h5>
+                                <p class="client-position">CEO, Precision Builders</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Ready to Optimize Your Projects?</h2>
+            <p class="lead mb-4">Experience the power of comprehensive project management with SyncTooling</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Contact Us for a Demo</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="mb-4">Contact Us</h2>
+                    
+                    <div class="contact-info">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope fa-2x"></i>
+                            <div class="content">
+                                <p>Email us at:</p>
+                                <a href="mailto:info@synctooling.com" class="btn btn-primary btn-sm">info@synctooling.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <i class="fas fa-phone fa-2x"></i>
+                            <div class="content">
+                                <p>Call us at:</p>
+                                <a href="tel:+18012525155" class="btn btn-primary btn-sm">+1 801-252-5155</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt fa-2x"></i>
+                            <div class="content">
+                                <p>Visit us at:</p>
+                                <p class="address">SyncTooling<br>5501 Balcones Dr A141<br>Austin TX 78731</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 SyncTooling. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3">Privacy Policy</a>
+                    <a href="#" class="text-white me-3">Terms of Service</a>
+                    <a href="#" class="text-white">Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
